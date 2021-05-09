@@ -1,7 +1,8 @@
-import React, {components} from 'react';
+import React, {Component} from 'react';
 
 
-function Footer() {
+class Footer extends Component {
+  render(){
   return (
     
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -40,6 +41,7 @@ function Footer() {
   </footer>
       
   );
+  }
 }
 
 export default Footer;
