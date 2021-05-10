@@ -19,9 +19,12 @@ class Productlist extends Component {
     <input 
      key="random1"
      name=""
-     placeholder="ค้นหาสถานที่"
-     onChange={this.props.setsearch}
-    />    
+     placeholder="ค้นหาสถานที่ท่องเที่ยว"
+     onChange={this.props.search}
+    />
+    <button className="btn btn-outline-success" onClick={()=> this.props.onConfirmOrder()}>ค้นหา</button>
+    <hr/>
+    <br/>    
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {this.showProducts()}
       </div>
