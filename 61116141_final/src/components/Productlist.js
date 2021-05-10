@@ -16,7 +16,12 @@ class Productlist extends Component {
     <div class="album py-5 bg-light">
     <div class="container">
            
-            
+    <input 
+     key="random1"
+     name=""
+     placeholder="ค้นหาสถานที่"
+     onChange={this.props.setsearch}
+    />    
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {this.showProducts()}
       </div>
