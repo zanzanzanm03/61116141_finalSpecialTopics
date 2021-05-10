@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Productitems.css';
-
+import {Link} from 'react-router-dom';
 
 class Productitems extends Component {
   constructor(props){
@@ -19,8 +19,9 @@ class Productitems extends Component {
         {/* <p class="card-text">aaaa</p> */}
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
+            <Link to="/cart">
             <button type="button" class="btn btn-outline-secondary">นำใส่ตะกร้า</button>
-            
+            </Link>
           </div>
           <small class="text-muted">ราคา {price} bath</small>
         </div>

@@ -3,7 +3,7 @@ import Footer  from '../components/Footer';
 
 import React,{ Component } from 'react';
 import axios from 'axios';
-class Product extends Component {
+class Cart extends Component {
     constructor(props){
         super(props);
         this.state={product: ""}
@@ -18,7 +18,7 @@ class Product extends Component {
   return (
     <div >
         <Header/>
-        
+            <h1>popopop</h1>
         <Footer/>
     </div>
   );
@@ -26,4 +26,4 @@ class Product extends Component {
 }
 
 
-export default Product;
+export default Cart;
