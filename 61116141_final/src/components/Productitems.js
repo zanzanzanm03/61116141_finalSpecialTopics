@@ -7,7 +7,7 @@ class Productitems extends Component {
     super(props);
   }
   render(){
-    const {product_name,img, price}= this.props.product;
+    const {location_name,description,img, Province}= this.props.product;
   return (
     <div>
     <div class="col">
@@ -15,15 +15,15 @@ class Productitems extends Component {
     <img className="bd-placeholder-img card-img-top" src={img} />
 
       <div class="card-body">
-        <h1 class='text-center'>{product_name}</h1>
-        {/* <p class="card-text">aaaa</p> */}
+        <h1 class='text-center'>{location_name}</h1>
+        <p class="card-text">{description}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <Link to="/cart">
-            <button type="button" class="btn btn-outline-secondary">นำใส่ตะกร้า</button>
+            <Link to="/Detail">
+            <button type="button" class="btn btn-outline-secondary">รายละเอียด</button>
             </Link>
           </div>
-          <small class="text-muted">ราคา {price} bath</small>
+          <small class="text-muted">จังหวัด{Province}</small>
         </div>
       </div>
     </div>
